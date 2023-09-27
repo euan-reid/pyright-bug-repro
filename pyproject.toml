@@ -1,0 +1,26 @@
+[tool.poetry]
+name = "pyright-repro"
+version = "0.1.0"
+description = ""
+authors = ["Euan Reid <git@euanreid.com>"]
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.11"
+pydantic = "^2.4.1"
+
+[tool.ruff]
+select = ["ALL", "D213"]
+ignore = ["D203", "D212", "D400", "D415"]
+line-length = 79
+
+[tool.ruff.format]
+quote-style = "single"
+
+[tool.ruff.flake8-quotes]
+inline-quotes = "single"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
